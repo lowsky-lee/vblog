@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Lowsky\'s blog',
     description: '',
-    // base: '/vblog/', // 本地要注释, 打包必须配置, 还有在node_modules/@vuepress/core/lib/client/app.js这个文件注释掉mode: 'history',
+    base: '/vblog/', // 本地要注释, 打包必须配置, 还有在node_modules/@vuepress/core/lib/client/app.js这个文件注释掉mode: 'history',
     head: [
         ['link', { rel: 'icon', href: '/Eminem.svg' }]
     ],
