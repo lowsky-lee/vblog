@@ -1,6 +1,6 @@
 <template>
   <div class="not-find-container">
-    <img src="/404.png" alt="404" class="not-find-img" />
+    <img src="/vblog/404.png" alt="404" class="not-find-img" />
     <div class="not-find-btn">
        <router-link to="/">返回首页</router-link>
     </div>
