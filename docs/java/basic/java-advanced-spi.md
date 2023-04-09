@@ -901,4 +901,4 @@ public final class ServiceLoader<S>
 +   https://www.cnblogs.com/happyframework/archive/2013/09/17/3325560.html
 +   https://blog.csdn.net/sakurainluojia/article/details/53534949
 +   https://www.jianshu.com/p/0d196ad23915
-+   引用 https://www.pdai.tech/md/java/advanced/java-advanced-spi.html
++   转载 https://www.pdai.tech/md/java/advanced/java-advanced-spi.html

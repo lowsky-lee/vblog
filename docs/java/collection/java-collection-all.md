@@ -104,4 +104,4 @@ Java容器里只能放对象，对于基本类型(int, long, float, double等)�
 ## 参考内容
 
 -   CarpenterLee/JCFInternals https://github.com/CarpenterLee/JCFInternals
--   引用 https://www.pdai.tech/md/java/collection/java-collection-all.html
+-   转载 https://www.pdai.tech/md/java/collection/java-collection-all.html

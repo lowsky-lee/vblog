@@ -950,4 +950,4 @@ public class ExceptionTest {
 +   https://blog.csdn.net/ThinkWon/article/details/101681073
 +   https://www.cnblogs.com/skywang12345/p/3544287.html
 +   https://www.codercto.com/a/33350.html
-+   引用 https://www.pdai.tech/md/java/basic/java-basic-x-exception.html
++   转载 https://www.pdai.tech/md/java/basic/java-basic-x-exception.html

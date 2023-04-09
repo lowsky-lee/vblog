@@ -61,6 +61,7 @@
 +   Thinking in Java (Java 编程思想) Gitbook中文文档 https://java.quanke.name/
 +   Thinking in Java (Java 编程思想) Github https://github.com/quanke/think-in-java
 +   Thinking in Java (Java 编程思想) Gitbook2 https://www.gitbook.com/book/wizardforcel/thinking-in-java/details
++   转载 https://www.pdai.tech/md/java/basic/java-basic-lan-sum.html
 
 ## 知识体系
 
@@ -371,7 +372,3 @@ java中有三种移位运算符
 ### Java语言的鲁棒性
 
 Java在编译和运行程序时，都要对可能出现的问题进行检查，以消除错误的产生。它提供自动垃圾收集来进行内存管理，防止程序员在管理内存时容易产生的错误。通过集成的面向对象的例外处理机制，在编译时，Java揭示出可能出现但未被处理的异常，帮助程序员正确地进行选择以防止系统的崩溃。另外，Java在编译时还可捕获类型声明中的许多常见错误，防止动态运行时不匹配问题的出现。
-
-## 参考文章
-
-* 引用 https://www.pdai.tech/md/java/basic/java-basic-lan-sum.html

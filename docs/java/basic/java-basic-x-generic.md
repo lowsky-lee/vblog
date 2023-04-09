@@ -1141,4 +1141,4 @@ public interface ParameterizedType extends Type {
 +   https://www.cnblogs.com/rudy-laura/articles/3391013.html
 +   https://www.jianshu.com/p/986f732ed2f1
 +   https://blog.csdn.net/u011240877/article/details/53545041
-+   引用 https://www.pdai.tech/md/java/basic/java-basic-x-generic.html
++   转载 https://www.pdai.tech/md/java/basic/java-basic-x-generic.html
