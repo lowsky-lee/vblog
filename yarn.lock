@@ -1485,6 +1485,11 @@
     "valine" "^1.4.18"
     "vssue" "^1.4.6"
 
+"@vuepress-reco/vuepress-plugin-kan-ban-niang@^1.0.5":
+  "integrity" "sha512-ufqpOw0zhLxv3PvoYlHTsjmG4CFiCaQ8dnf950Ov7JmajKgpAMarZ3ObB+xi5ex0sgetxU82YSf+CptQceXQIw=="
+  "resolved" "https://registry.npmjs.org/@vuepress-reco/vuepress-plugin-kan-ban-niang/-/vuepress-plugin-kan-ban-niang-1.0.5.tgz"
+  "version" "1.0.5"
+
 "@vuepress-reco/vuepress-plugin-pagation@^1.6.17":
   "integrity" "sha512-JL5ThROczUYc1P54SnZ7E1TG8rnOBIdDHlzPRHbgAhxatPb3dKp/s8QUpmR0YSpXnA5hJJS6LZFM1UAPsU6t+w=="
   "resolved" "https://registry.npmjs.org/@vuepress-reco/vuepress-plugin-pagation/-/vuepress-plugin-pagation-1.6.17.tgz"
