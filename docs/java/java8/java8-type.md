@@ -19,11 +19,17 @@
 
 理解Java泛型最简单的方法是把它看成一种便捷语法，能节省你某些Java类型转换(casting)上的操作:
 
-List<Apple> box = new ArrayList<Apple>();box.add(new Apple());Apple apple =box.get(0);
+```java
+List<Apple> box = new ArrayList<Apple>();
+box.add(new Apple());
+Apple apple =box.get(0);
+```
 
 上面的代码自身已表达的很清楚: box是一个装有Apple对象的List。get方法返回一个Apple对象实例，这个过程不需要进行类型转换。没有泛型，上面的代码需要写成这样:
 
+```java
 Apple apple = (Apple)box.get(0);
+```
 
 ## 泛型的尴尬
 
