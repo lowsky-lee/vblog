@@ -210,5 +210,23 @@ module.exports = {
                 height: 320
             }
         ],
+        // 评论
+        [
+            '@vuepress-reco/comments', {
+                solution: 'vssue',
+                options: {
+                    title: 'vblog',
+                    platform: 'github',
+                    owner: 'lowskylee',
+                    repo: 'vblog',
+                    clientId: '37da52dd478c000f6e16',
+                    clientSecret: '44055d7a85a0964de4a16cbdd133a81144b74c4d',
+                }
+            }
+        ],
+        //
+        '@vuepress-reco/vuepress-plugin-loading-page',
+        // vuepress-plugin-fulltext-search
+        'fulltext-search',
     ],
 }

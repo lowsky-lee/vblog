@@ -575,7 +575,7 @@ public class ThreadLocalExample1 {
 
 它所对应的底层结构图为:
 
-![image](https://www.pdai.tech/images/pics/3646544a-cb57-451d-9e03-d3c4f5e4434a.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/3646544a-cb57-451d-9e03-d3c4f5e4434a.png)
 
 每个 Thread 都有一个 ThreadLocal.ThreadLocalMap 对象，Thread 类中就定义了 ThreadLocal.ThreadLocalMap 成员。
 

@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "1.0.1": "^1.0.0",
+    "@vuepress-reco/vuepress-plugin-comments": "^1.6.13",
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.6.13",
     "vuepress": "^1.9.9",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-theme-reco": "^1.6.17"
   },
   "start": "react-scripts --openssl-legacy-provider start",
