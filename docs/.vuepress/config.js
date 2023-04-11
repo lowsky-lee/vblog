@@ -42,9 +42,12 @@ module.exports = {
             { 
                 text: 'Java',
                 items: [
-                    { text: 'Java 基础', link: '/java/basic/java-basic-oop' },
-                    { text: 'Java 集合框架', link: '/java/collection/java-collection-all' },
-                    { text: 'Java 多线程与并发', link: '/java/thread/java-thread-x-overview' }
+                    { text: 'Java 面向对象和基础', link: '/java/basic/java-basic-oop' },
+                    { text: 'Java进阶 - 集合框架', link: '/java/collection/java-collection-all' },
+                    { text: 'Java进阶 - 并发框架', link: '/java/thread/java-thread-x-overview' },
+                    { text: 'Java进阶 - IO框架', link: '/java/io/java-io-overview' },
+                    { text: 'Java进阶 - Java8新特性', link: '/java/java8/java8' },
+                    { text: 'Java进阶 - JVM相关', link: '/java/jvm/java-jvm-x-overview' }
                 ]
             },
             { 
@@ -65,13 +68,13 @@ module.exports = {
                     { text: 'Spring Framework 5基础', link: '/spring/basic/spring' },
                 ]
             },
-            {
-                text: '开发必备',
-                items: [
-                    { text: '在线ASCII码表', link: 'https://www.fly63.com/tool/ascii/' },
-                    { text: '正则表达式调试工具', link: 'https://regexr.com/' }
-                ]
-            },
+//            {
+//                text: '开发必备',
+//                items: [
+//                    { text: '在线ASCII码表', link: 'https://www.fly63.com/tool/ascii/' },
+//                    { text: '正则表达式调试工具', link: 'https://regexr.com/' }
+//                ]
+//            },
             {
                 text: '技术文档',
                 items: [
@@ -94,7 +97,7 @@ module.exports = {
                         { title: "Java 基础 - 面向对象", path: "/java/basic/java-basic-oop" },
                         { title: "Java 基础 - 知识点", path: "/java/basic/java-basic-lan-basic" },
                         { title: "Java 基础 - 图谱 & Q/A", path: "/java/basic/java-basic-lan-sum" },
-                        { title: "JJava 基础 - 泛型机制详解", path: "/java/basic/java-basic-x-generic" },
+                        { title: "Java 基础 - 泛型机制详解", path: "/java/basic/java-basic-x-generic" },
                         { title: "Java 基础 - 注解机制详解", path: "/java/basic/java-basic-x-annotation" },
                         { title: "Java 基础 - 异常机制详解", path: "/java/basic/java-basic-x-exception" },
                         { title: "Java 基础 - 反射机制详解", path: "/java/basic/java-basic-x-reflection" },
@@ -146,6 +149,48 @@ module.exports = {
                         { title: "JUC工具类: Exchanger详解", path: "/java/thread/java-thread-x-juc-tool-exchanger" },
                         { title: "Java 并发 - ThreadLocal详解", path: "/java/thread/java-thread-x-threadlocal" },
                     ]
+                },
+                {
+                    title: "Java IO/NIO/AIO",
+                    children: [
+                        { title: "Java IO知识体系详解", path: "/java/io/java-io-overview" },
+                        { title: "Java IO - 分类(传输，操作)", path: "/java/io/java-io-basic-category" },
+                        { title: "Java IO - 设计模式(装饰者模式)", path: "/java/io/java-io-basic-design-pattern" },
+                        { title: "Java IO - 源码: InputStream", path: "/java/io/java-io-basic-code-inputstream" },
+                        { title: "Java IO - 源码: OutputStream", path: "/java/io/java-io-basic-code-outputstream" },
+                        { title: "Java IO - 常见类使用", path: "/java/io/java-io-basic-usage" },
+                        { title: "IO 模型 - Unix IO 模型", path: "/java/io/java-io-model" },
+                        { title: "Java IO - BIO 详解", path: "/java/io/java-io-bio" },
+                        { title: "Java NIO - 基础详解", path: "/java/io/java-io-nio" },
+                        { title: "Java NIO - IO多路复用详解", path: "/java/io/java-io-nio-select-epoll" },
+                        { title: "Java AIO - 异步IO详解", path: "/java/io/java-io-aio" },
+                        { title: "Java N(A)IO - 框架: Netty", path: "/java/io/java-io-nio-netty" },
+                        { title: "Java NIO - 零拷贝实现", path: "/java/io/java-io-nio-zerocopy" },
+                    ],
+                },
+                {
+                    title: "Java8 特性详解",
+                    children: [
+                        { title: "Java8特性知识体系详解", path: "/java/java8/java8" },
+                        { title: "Java 8 - 函数编程(lambda表达式)", path: "/java/java8/java8-stream" },
+                        { title: "Java 8 - Optional类深度解析", path: "/java/java8/java8-optional" },
+                        { title: "Java 8 - 默认方法", path: "/java/java8/java8-default" },
+                        { title: "Java 8 - 类型注解", path: "/java/java8/java8-type-anno" },
+                        { title: "Java 8 - 重复注解", path: "/java/java8/java8-anno-repeat" },
+                        { title: "Java 8 - 类型推断优化", path: "/java/java8/java8-type" },
+                        { title: "Java 8 - JRE精简", path: "/java/java8/java8-jre" },
+                        { title: "Java 8 - 移除Permgen", path: "/java/java8/java8-permgen" },
+                        { title: "Java 8 - StampedLock", path: "/java/java8/java8-stampedlock" },
+                        { title: "Java 8 - LocalDate/LocalDateTime", path: "/java/java8/java8-localdatetime" },
+                        { title: "Java 8 - JavaFx 2.0", path: "/java/java8/java8-javafx" },
+                        { title: "Java 8 - 其它更新: 字符串，base64,...", path: "/java/java8/java8-others" },
+                    ],
+                },
+                {
+                    title: "JVM相关",
+                    children: [
+                        { title: "JVM相关知识体系详解", path: "/java/jvm/java-jvm-x-overview" },
+                    ],
                 }
             ],
 
