@@ -1,6 +1,6 @@
 ## Java NIO - 基础详解
 
-> 新的输入/输出 (NIO) 库是在 JDK 1.4 中引入的，弥补了原来的 I/O 的不足，提供了高速的、面向块的 I/O。@pdai
+> 新的输入/输出 (NIO) 库是在 JDK 1.4 中引入的，弥补了原来的 I/O 的不足，提供了高速的、面向块的 I/O。
 
 +   [Java NIO - 基础详解](#java-nio---%e5%9f%ba%e7%a1%80%e8%af%a6%e8%a7%a3)
     +   [流与块](#%e6%b5%81%e4%b8%8e%e5%9d%97)
@@ -73,23 +73,23 @@ I/O 包和 NIO 已经很好地集成了，java.io.\* 已经以 NIO 为基础重�
 
 ① 新建一个大小为 8 个字节的缓冲区，此时 position 为 0，而 limit = capacity = 8。capacity 变量不会改变，下面的讨论会忽略它。
 
-![image](https://www.pdai.tech/images/pics/1bea398f-17a7-4f67-a90b-9e2d243eaa9a.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1bea398f-17a7-4f67-a90b-9e2d243eaa9a.png)
 
 ② 从输入通道中读取 5 个字节数据写入缓冲区中，此时 position 移动设置为 5，limit 保持不变。
 
-![image](https://www.pdai.tech/images/pics/80804f52-8815-4096-b506-48eef3eed5c6.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/80804f52-8815-4096-b506-48eef3eed5c6.png)
 
 ③ 在将缓冲区的数据写到输出通道之前，需要先调用 flip() 方法，这个方法将 limit 设置为当前 position，并将 position 设置为 0。
 
-![image](https://www.pdai.tech/images/pics/952e06bd-5a65-4cab-82e4-dd1536462f38.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/952e06bd-5a65-4cab-82e4-dd1536462f38.png)
 
 ④ 从缓冲区中取 4 个字节到输出缓冲中，此时 position 设为 4。
 
-![image](https://www.pdai.tech/images/pics/b5bdcbe2-b958-4aef-9151-6ad963cb28b4.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/b5bdcbe2-b958-4aef-9151-6ad963cb28b4.png)
 
 ⑤ 最后需要调用 clear() 方法来清空缓冲区，此时 position 和 limit 都被设置为最初位置。
 
-![image](https://www.pdai.tech/images/pics/67bf5487-c45d-49b6-b9c0-a058d8c68902.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/67bf5487-c45d-49b6-b9c0-a058d8c68902.png)
 
 ## 文件 NIO 实例
 
@@ -147,7 +147,7 @@ NIO 实现了 IO 多路复用中的 Reactor 模型，一个线程 Thread 使用�
 
 应该注意的是，只有套接字 Channel 才能配置为非阻塞，而 FileChannel 不能，为 FileChannel 配置非阻塞也没有意义。
 
-![image](https://www.pdai.tech/images/pics/4d930e22-f493-49ae-8dff-ea21cd6895dc.png)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/4d930e22-f493-49ae-8dff-ea21cd6895dc.png)
 
 ### 1\. 创建选择器
 
@@ -353,3 +353,4 @@ NIO 与普通 I/O 的区别主要有以下两点:
 +   [NIO 与传统 IO 的区别在新窗口打开](http://blog.csdn.net/shimiso/article/details/24990499)
 +   [Decorator Design Pattern在新窗口打开](http://stg-tud.github.io/sedc/Lecture/ws13-14/5.3-Decorator.html#mode=document)
 +   [Socket Multicast在新窗口打开](http://labojava.blogspot.com/2012/12/socket-multicast.html)
++   转载 https://www.pdai.tech/md/java/io/java-io-nio.html

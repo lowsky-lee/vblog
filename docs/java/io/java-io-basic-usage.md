@@ -1,6 +1,6 @@
 ## Java IO - 常见类使用
 
-> 本文主要介绍Java IO常见类的使用，包括：磁盘操作，字节操作，字符操作，对象操作和网络操作。 @pdai
+> 本文主要介绍Java IO常见类的使用，包括：磁盘操作，字节操作，字符操作，对象操作和网络操作。 
 
 +   [Java IO - 常见类使用](#java-io---%e5%b8%b8%e8%a7%81%e7%b1%bb%e4%bd%bf%e7%94%a8)
     +   [IO常见类的使用](#io%e5%b8%b8%e8%a7%81%e7%b1%bb%e7%9a%84%e4%bd%bf%e7%94%a8)
@@ -190,7 +190,7 @@ public static void main(String[] args) throws IOException {
 +   Socket: 客户端类
 +   服务器和客户端通过 InputStream 和 OutputStream 进行输入输出。
 
-![image](https://www.pdai.tech/images/pics/ClienteServidorSockets1521731145260.jpg)
+![image](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/ClienteServidorSockets1521731145260.jpg)
 
 #### Datagram
 
@@ -204,3 +204,5 @@ public static void main(String[] args) throws IOException {
 https://blog.csdn.net/congwiny/article/details/18922847
 
 ## 参考文章
+
+* 转载 https://www.pdai.tech/md/java/io/java-io-basic-usage.html

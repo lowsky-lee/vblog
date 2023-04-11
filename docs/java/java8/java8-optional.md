@@ -1,6 +1,6 @@
 ## Java 8 - Optional类深度解析
 
-> 对Java 8 Optional类进行深度解析。 @pdai
+> 对Java 8 Optional类进行深度解析。 
 
 +   [Java 8 - Optional类深度解析](#java-8---optional%E7%B1%BB%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90)
     +   [Optional类包含的方法](#optional%E7%B1%BB%E5%8C%85%E5%90%AB%E7%9A%84%E6%96%B9%E6%B3%95)
@@ -388,3 +388,5 @@ public static <T> Optional<T> resolve(Supplier<T> resolver) {
 译文链接: http://www.importnew.com/6675.html
 
 转载请保留原文出处、译者和译文链接。
+
+转载 https://www.pdai.tech/md/java/java8/java8-optional.html

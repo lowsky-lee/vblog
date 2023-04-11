@@ -1,6 +1,6 @@
 ## Java 8 - StampedLock
 
-> 本文将从synchronized、Lock到Java8新增的StampedLock进行对比分析，相信StampedLock不会让大家失望。@pdai
+> 本文将从synchronized、Lock到Java8新增的StampedLock进行对比分析，相信StampedLock不会让大家失望。
 
 +   [Java 8 - StampedLock](#java-8---stampedlock)
     +   [synchronized](#synchronized)
@@ -186,7 +186,7 @@ StampedLock要比ReentrantReadWriteLock更加廉价，也就是消耗比较小�
 
 下图是六个线程情况下，读性能是其几十倍，写性能也是近10倍左右:
 
-![](https://www.pdai.tech/images/java/java-stampedlock-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-stampedlock-1.png)
 
 ## 总结
 
@@ -204,3 +204,5 @@ StampedLock 可以说是Lock的一个很好的补充，吞吐量以及性能上�
 +   https://wizardforcel.gitbooks.io/java8-tutorials/content/Java%208%20%E5%B9%B6%E5%8F%91%E6%95%99%E7%A8%8B%20Threads%20%E5%92%8C%20Executors.html
     
 +   https://wizardforcel.gitbooks.io/java8-new-features/content/10.html
+
++   转载 https://www.pdai.tech/md/java/java8/java8-stampedlock.html

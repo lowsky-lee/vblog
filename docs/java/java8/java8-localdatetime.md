@@ -1,6 +1,6 @@
 ## Java 8 - LocalDate/LocalDateTime
 
-> 理解时间和日期库需要理解如下问题: @pdai
+> 理解时间和日期库需要理解如下问题: 
 > 
 > +   Java8之前的Date有哪些槽点?
 > +   Java8之前使用哪些常用的第三方时间库?
@@ -319,3 +319,5 @@ Noda-Time: .NET 阵营的 Joda-Time 的复制
 +   时区指的是地球上共享同一标准时间的地区。每个时区都有一个唯一标识符，同时还有一个地区/城市(Asia/Tokyo)的格式以及从格林威治时间开始的一个偏移时间。比如说，东京的偏移时间就是+09:00。 OffsetDateTime类实际上包含了LocalDateTime与ZoneOffset。它用来表示一个包含格林威治时间偏移量(+/-小时: 分，比如+06:00或者 -08: 00)的完整的日期(年月日)及时间(时分秒，纳秒)。 DateTimeFormatter类用于在Java中进行日期的格式化与解析。与SimpleDateFormat不同，它是不可变且线程安全的，如果需要的话，可以赋值给一个静态变量。DateTimeFormatter类提供了许多预定义的格式器，你也可以自定义自己想要的格式。当然了，根据约定，它还有一个parse()方法是用于将字符串转换成日期的，如果转换期间出现任何错误，它会抛出DateTimeParseException异常。类似的，DateFormatter类也有一个用于格式化日期的format()方法，它出错的话则会抛出DateTimeException异常。
     
 +   再说一句，“MMM d yyyy”与“MMm dd yyyy”这两个日期格式也略有不同，前者能识别出”Jan 2 2014″与”Jan 14 2014″这两个串，而后者如果传进来的是”Jan 2 2014″则会报错，因为它期望月份处传进来的是两个字符。为了解决这个问题，在天为个位数的情况下，你得在前面补0，比如”Jan 2 2014″应该改为”Jan 02 2014″。
+
+转载 https://www.pdai.tech/md/java/java8/java8-localdatetime.html

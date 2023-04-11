@@ -1,6 +1,6 @@
 ## Java NIO - 零拷贝实现
 
-> 这里转一篇Java NIO 零拷贝的实现文章，在此之前建议先理解什么是Linux中零拷贝，可以先看这篇文章。本文从源码着手分析了 Java NIO 对零拷贝的实现，主要包括基于内存映射（mmap）方式的 MappedByteBuffer 以及基于 sendfile 方式的 FileChannel。最后在篇末简单的阐述了一下 Netty 中的零拷贝机制，以及 RocketMQ 和 Kafka 两种消息队列在零拷贝实现方式上的区别。@pdai
+> 这里转一篇Java NIO 零拷贝的实现文章，在此之前建议先理解什么是Linux中零拷贝，可以先看这篇文章。本文从源码着手分析了 Java NIO 对零拷贝的实现，主要包括基于内存映射（mmap）方式的 MappedByteBuffer 以及基于 sendfile 方式的 FileChannel。最后在篇末简单的阐述了一下 Netty 中的零拷贝机制，以及 RocketMQ 和 Kafka 两种消息队列在零拷贝实现方式上的区别。
 
 +   [Java NIO - 零拷贝实现](#java-nio---%E9%9B%B6%E6%8B%B7%E8%B4%9D%E5%AE%9E%E7%8E%B0)
     +   [Java NIO零拷贝](#java-nio%E9%9B%B6%E6%8B%B7%E8%B4%9D)
@@ -619,9 +619,10 @@ ByteBuf 可以通过 wrap 操作把字节数组、ByteBuf、ByteBuffer 包装成
 
 RocketMQ 选择了 mmap + write 这种零拷贝方式，适用于业务级消息这种小块文件的数据持久化和传输；而 Kafka 采用的是 sendfile 这种零拷贝方式，适用于系统日志消息这种高吞吐量的大块文件的数据持久化和传输。但是值得注意的一点是，Kafka 的索引文件使用的是 mmap + write 方式，数据文件使用的是 sendfile 方式。
 
-![](https://www.pdai.tech/images/io/java-io-copy-11.jpg)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-copy-11.jpg)
 
 ## 参考文章
 
 +   本文主要整理自 https://zhuanlan.zhihu.com/p/83398714
 +   作者：零壹技术栈
++   转载 https://www.pdai.tech/md/java/io/java-io-nio-zerocopy.html

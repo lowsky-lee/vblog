@@ -1,6 +1,6 @@
 ## ♥Java IO知识体系详解♥
 
-> 本文主要梳理Java IO/NIO/AIO的知识体系。@pdai
+> 本文主要梳理Java IO/NIO/AIO的知识体系。
 
 +   [♥Java IO知识体系详解♥](#java-io%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E8%AF%A6%E8%A7%A3)
     +   [知识体系](#%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB)
@@ -9,16 +9,16 @@
 
 ## 知识体系
 
-![](https://www.pdai.tech/images/io/java-io-overview2.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-overview2.png)
 
 ## 相关文章
 
-> **A. Java进阶 - IO框架之知识体系**：首先了解下Java IO框架包含什么，同时推荐下如何学习IO框架。@pdai
+> **A. Java进阶 - IO框架之知识体系**：首先了解下Java IO框架包含什么，同时推荐下如何学习IO框架。
 
 +   [Java IO/NIO/AIO - Overview](https://www.pdai.tech/md/java/io/java-io-overview.html)
     +   本文主要梳理Java IO/NIO/AIO的知识体系
 
-> **B. Java进阶 - IO框架之基础IO**：其次对Java基础IO框架进行梳理，包括其分类，使用和源码详解。@pdai
+> **B. Java进阶 - IO框架之基础IO**：其次对Java基础IO框架进行梳理，包括其分类，使用和源码详解。
 
 +   [Java IO - 分类(传输，操作)](https://www.pdai.tech/md/java/io/java-io-basic-category.html)
     +   本文主要从`传输方式`和`数据操作`两个方面分析Java IO的分类
@@ -31,7 +31,7 @@
 +   [Java IO - 常见类使用](https://www.pdai.tech/md/java/io/java-io-basic-usage.html)
     +   本文主要介绍Java IO常见类的使用，包括：磁盘操作，字节操作，字符操作，对象操作和网络操作
 
-> **C. Java进阶 - IO框架之NIO/AIO等**：然后再对Unix IO模型学习，引入到Java BIO/NIO/AIO相关知识详解。@pdai
+> **C. Java进阶 - IO框架之NIO/AIO等**：然后再对Unix IO模型学习，引入到Java BIO/NIO/AIO相关知识详解。
 
 +   [IO 模型 - Unix IO 模型](https://www.pdai.tech/md/java/io/java-io-model.html)
     +   本文主要简要介绍 Unix I/O 5种模型，并对5大模型比较，并重点为后续章节解释IO多路复用做铺垫
@@ -42,9 +42,9 @@
 +   [Java NIO - IO多路复用详解](https://www.pdai.tech/md/java/io/java-io-nio-select-epoll.html)
     +   本文主要对IO多路复用，Ractor模型以及Java NIO对其的支持
 +   [Java AIO - 异步IO详解](https://www.pdai.tech/md/java/io/java-io-aio.html)
-    +   本文主要对异步IO和Java中对AIO的支持详解。@pdai
+    +   本文主要对异步IO和Java中对AIO的支持详解。
 
-> **D. Java进阶 - IO框架之开源框架**：最后再对常用的开源框架进行分析和详解。@pdai
+> **D. Java进阶 - IO框架之开源框架**：最后再对常用的开源框架进行分析和详解。
 
 +   [Java NIO - 零拷贝实现](https://www.pdai.tech/md/java/io/java-io-nio-zerocopy.html)这里转一篇Java NIO 零拷贝的实现文章，在此之前建议先理解什么是Linux中零拷贝，可以先看这篇文章。本文从源码着手分析了 Java NIO 对零拷贝的实现，主要包括基于内存映射（mmap）方式的 MappedByteBuffer 以及基于 sendfile 方式的 FileChannel。最后在篇末简单的阐述了一下 Netty 中的零拷贝机制，以及 RocketMQ 和 Kafka 两种消息队列在零拷贝实现方式上的区别。
     
@@ -73,3 +73,4 @@ Netty
 +   https://blog.csdn.net/yinwenjie/article/details/48829419
 +   https://blog.csdn.net/yinwenjie/article/details/48969853
 +   https://blog.csdn.net/woaixiaopangniu521/article/details/70279143
++   转载 https://www.pdai.tech/md/java/io/java-io-overview.html

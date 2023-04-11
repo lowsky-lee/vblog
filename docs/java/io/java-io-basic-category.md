@@ -1,6 +1,6 @@
 ## Java IO - 分类(传输，操作)
 
-> 本文主要从`传输方式`和`数据操作`两个方面分析Java IO的分类。@pdai
+> 本文主要从`传输方式`和`数据操作`两个方面分析Java IO的分类。
 
 +   [Java IO - 分类(传输，操作)](#java-io---%e5%88%86%e7%b1%bb%e4%bc%a0%e8%be%93%e6%93%8d%e4%bd%9c)
     +   [IO理解分类 - 从传输方式上](#io%e7%90%86%e8%a7%a3%e5%88%86%e7%b1%bb---%e4%bb%8e%e4%bc%a0%e8%be%93%e6%96%b9%e5%bc%8f%e4%b8%8a)
@@ -10,7 +10,7 @@
         +   [字节转字符Input/OutputStreamReader/Writer](#%e5%ad%97%e8%8a%82%e8%bd%ac%e5%ad%97%e7%ac%a6inputoutputstreamreaderwriter)
     +   [IO理解分类 - 从数据操作上](#io%e7%90%86%e8%a7%a3%e5%88%86%e7%b1%bb---%e4%bb%8e%e6%95%b0%e6%8d%ae%e6%93%8d%e4%bd%9c%e4%b8%8a)
         +   [文件(file)](#%e6%96%87%e4%bb%b6file)
-        +   [数组(\[\])](#%e6%95%b0%e7%bb%84)
+        +   [数组](#%e6%95%b0%e7%bb%84)
         +   [管道操作](#%e7%ae%a1%e9%81%93%e6%93%8d%e4%bd%9c)
         +   [基本数据类型](#%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b)
         +   [缓冲操作](#%e7%bc%93%e5%86%b2%e6%93%8d%e4%bd%9c)
@@ -31,13 +31,13 @@
 
 (整体结构如下，部分派生类有缺失)
 
-![](https://www.pdai.tech/images/io/java-io-category-1-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-category-1-1.png)
 
 ### 字符流
 
 (整体结构如下，部分派生类有缺失)
 
-![](https://www.pdai.tech/images/io/java-io-category-2-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-category-2-1.png)
 
 ### 字节流和字符流的区别
 
@@ -60,13 +60,13 @@ UTF-16be 中的 be 指的是 Big Endian，也就是大端。相应地也有 UTF-
 
 Java 使用双字节编码 UTF-16be，这不是指 Java 只支持这一种编码方式，而是说 char 这种类型使用 UTF-16be 进行编码。char 类型占 16 位，也就是两个字节，Java 使用这种双字节编码是为了让一个中文或者一个英文都能使用一个 char 来存储。
 
-![](https://www.pdai.tech/images/io/java-io-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-1.png)
 
 ## IO理解分类 - 从数据操作上
 
 从数据来源或者说是操作对象角度看，IO 类可以分为:
 
-![](https://www.pdai.tech/images/io/java-io-category-3.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-category-3.png)
 
 ### 文件(file)
 
@@ -100,3 +100,7 @@ ObjectInputStream、ObjectOutputStream
 ### 转换
 
 InputStreamReader、OutputStreamWriter
+
+## 参考文档
+
++ 转载 https://www.pdai.tech/md/java/io/java-io-basic-category.html

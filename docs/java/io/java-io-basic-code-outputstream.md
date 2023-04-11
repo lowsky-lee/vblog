@@ -1,6 +1,6 @@
 ## Java IO - 源码: OutputStream
 
-> 本文主要从JDK 11源码角度分析 OutputStream。 @pdai
+> 本文主要从JDK 11源码角度分析 OutputStream。 
 
 +   [Java IO - 源码: OutputStream](#java-io---%E6%BA%90%E7%A0%81-outputstream)
     +   [OutputStream 类实现关系](#outputstream-%E7%B1%BB%E5%AE%9E%E7%8E%B0%E5%85%B3%E7%B3%BB)
@@ -16,7 +16,7 @@
 
 > OutputStream是输出字节流，具体的实现类层次结构如下：
 
-![](https://www.pdai.tech/images/io/io-outputstream-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/io-outputstream-1.png)
 
 ## OutputStream 抽象类
 
@@ -234,7 +234,7 @@ public class FilterOutputStream extends OutputStream {
 }
 ```
 
-@pdai: 对比下JDK8中，close方法是没有加锁处理的。这种情况下你可以看JDK8源码中，直接利用java7的try with resources方式，优雅的调用flush方法后对out进行关闭。
+: 对比下JDK8中，close方法是没有加锁处理的。这种情况下你可以看JDK8源码中，直接利用java7的try with resources方式，优雅的调用flush方法后对out进行关闭。
 
 ```java
 public void close() throws IOException {
@@ -442,3 +442,4 @@ public class BufferedOutputStream extends FilterOutputStream {
 ## 参考文章
 
 +   JDK 11
++   转载 https://www.pdai.tech/md/java/io/java-io-basic-code-outputstream.html

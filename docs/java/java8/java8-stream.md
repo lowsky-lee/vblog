@@ -1,6 +1,6 @@
 ## Java 8 - 函数编程(lambda表达式)
 
-> 我们关心的是如何写出好代码，而不是符合函数编程风格的代码。 @pdai
+> 我们关心的是如何写出好代码，而不是符合函数编程风格的代码。 
 
 +   [Java 8 - 函数编程(lambda表达式)](#java-8---%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8Blambda%E8%A1%A8%E8%BE%BE%E5%BC%8F)
     +   [简介](#%E7%AE%80%E4%BB%8B)
@@ -189,7 +189,7 @@ System.out.printf("serial: %.2fs, parallel %.2fs%n", (t1 - t0) * 1e-9, (t2 - t1)
 
 看下所有API:
 
-![](https://www.pdai.tech/images/java/java-stream-functions.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-stream-functions.png)
 
 ## 常用例子
 
@@ -861,3 +861,4 @@ List<String> phones=new ArrayList<String>();
 +   [http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html在新窗口打开](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html)
 +   Java8 Lambda表达式教程 https://blog.csdn.net/ioriogami/article/details/12782141
 +   Java8 6个问题 https://wizardforcel.gitbooks.io/java8-tutorials/content/Java%208%20%E7%9A%846%E4%B8%AA%E9%97%AE%E9%A2%98.html
++   转载 https://www.pdai.tech/md/java/java8/java8-stream.html

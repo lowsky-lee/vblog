@@ -1,6 +1,6 @@
 ## IO 模型 - Unix IO 模型
 
-> 本文主要简要介绍 Unix I/O 5种模型，并对5大模型比较，并重点为后续章节解释IO多路复用做铺垫。@pdai
+> 本文主要简要介绍 Unix I/O 5种模型，并对5大模型比较，并重点为后续章节解释IO多路复用做铺垫。
 
 +   [IO 模型 - Unix IO 模型](#io-%e6%a8%a1%e5%9e%8b---unix-io-%e6%a8%a1%e5%9e%8b)
     +   [Unix IO 模型简介](#unix-io-%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b)
@@ -51,11 +51,11 @@ Unix 下有五种 I/O 模型:
 ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *src_addr, socklen_t *addrlen);
 ```
 
-![](https://www.pdai.tech/images/pics/1492928416812_4.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492928416812_4.png)
 
 或者网友提供的
 
-![](https://www.pdai.tech/images/io/java-io-model-0.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-model-0.png)
 
 ### 非阻塞式 I/O
 
@@ -63,11 +63,11 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 由于 CPU 要处理更多的系统调用，因此这种模型是比较低效的。
 
-![](https://www.pdai.tech/images/pics/1492929000361_5.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492929000361_5.png)
 
 或者网友提供的
 
-![](https://www.pdai.tech/images/io/java-io-model-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-model-1.png)
 
 ### I/O 复用
 
@@ -77,11 +77,11 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 如果一个 Web 服务器没有 I/O 复用，那么每一个 Socket 连接都需要创建一个线程去处理。如果同时有几万个连接，那么就需要创建相同数量的线程。并且相比于多进程和多线程技术，I/O 复用不需要进程线程创建和切换的开销，系统开销更小。
 
-![](https://www.pdai.tech/images/pics/1492929444818_6.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492929444818_6.png)
 
 或者网友提供的
 
-![](https://www.pdai.tech/images/io/java-io-model-2.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-model-2.png)
 
 ### 信号驱动 I/O
 
@@ -89,11 +89,11 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 相比于非阻塞式 I/O 的轮询方式，信号驱动 I/O 的 CPU 利用率更高。
 
-![](https://www.pdai.tech/images/pics/1492929553651_7.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492929553651_7.png)
 
 或者网友提供的
 
-![](https://www.pdai.tech/images/io/java-io-model-3.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-model-3.png)
 
 ### 异步 I/O
 
@@ -101,11 +101,11 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 异步 I/O 与信号驱动 I/O 的区别在于，异步 I/O 的信号是通知应用进程 I/O 完成，而信号驱动 I/O 的信号是通知应用进程可以开始 I/O。
 
-![](https://www.pdai.tech/images/pics/1492930243286_8.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492930243286_8.png)
 
 或者网友提供的
 
-![](https://www.pdai.tech/images/io/java-io-model-4.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java-io-model-4.png)
 
 ## I/O 模型比较
 
@@ -120,7 +120,7 @@ ssize_t recvfrom(int sockfd, void *buf, size_t len, int flags, struct sockaddr *
 
 前四种 I/O 模型的主要区别在于第一个阶段，而第二个阶段是一样的: 将数据从内核复制到应用进程过程中，应用进程会被阻塞。
 
-![](https://www.pdai.tech/images/pics/1492928105791_3.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/1492928105791_3.png)
 
 ## IO多路复用
 
@@ -173,3 +173,4 @@ poll 没有最大描述符数量的限制，如果平台支持并且对实时性
 +   [poll vs select vs event-based在新窗口打开](https://daniel.haxx.se/docs/poll-vs-select.html)
 +   [select / poll / epoll: practical difference for system architects在新窗口打开](http://www.ulduzsoft.com/2014/01/select-poll-epoll-practical-difference-for-system-architects/)
 +   [Browse the source code of userspace/glibc/sysdeps/unix/sysv/linux/ online在新窗口打开](https://code.woboq.org/userspace/glibc/sysdeps/unix/sysv/linux/)
++   转载 https://www.pdai.tech/md/java/io/java-io-model.html

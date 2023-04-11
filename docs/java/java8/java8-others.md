@@ -1,6 +1,6 @@
 ## Java 8 - 其它更新: 字符串，base64,...
 
-> 本文对Java 8 其它更新介绍和解读。转载@pdai https://www.pdai.tech/md/java/java8/java8-others.html
+> 本文对Java 8 其它更新介绍和解读。
 
 +   [Java 8 - 其它更新: 字符串，base64,...](#java-8---%e5%85%b6%e5%ae%83%e6%9b%b4%e6%96%b0%e5%ad%97%e7%ac%a6%e4%b8%b2base64)
     +   [处理数值](#%e5%a4%84%e7%90%86%e6%95%b0%e5%80%bc)
@@ -350,3 +350,5 @@ System.out.println(mimeEncoded);
 +   https://wizardforcel.gitbooks.io/modern-java/ch7.html
     
 +   http://www.importnew.com/9672.html
+
++   转载 https://www.pdai.tech/md/java/java8/java8-others.html

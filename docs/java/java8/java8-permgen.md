@@ -1,6 +1,6 @@
 ## Java 8 - 移除Permgen
 
-> 本文主要介绍PermGen space，及Java 8 - 移除Permgen。@pdai
+> 本文主要介绍PermGen space，及Java 8 - 移除Permgen。
 
 +   [Java 8 - 移除Permgen](#java-8---%e7%a7%bb%e9%99%a4permgen)
     +   [PermGen space简单介绍](#permgen-space%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d)
@@ -24,7 +24,7 @@ JVM 种类有很多，比如 Oralce-Sun Hotspot, Oralce JRockit, IBM J9, Taobao 
 
 JDK8 HotSpot JVM 将移除永久区，使用本地内存来存储类元数据信息并称之为: 元空间(Metaspace)；这与Oracle JRockit 和IBM JVM’s很相似，如下图所示
 
-![](https://www.pdai.tech/images/java/java8-jvm-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jvm-1.png)
 
 这意味着不会再有java.lang.OutOfMemoryError: PermGen问题，也不再需要你进行调优及监控内存空间的使用……但请等等，这么说还为时过早。在默认情况下，这些改变是透明的，接下来我们的展示将使你知道仍然要关注类元数据内存的占用。请一定要牢记，这个新特性也不能神奇地消除类和类加载器导致的内存泄漏。
 
@@ -130,7 +130,7 @@ public class OOMTest {
 
 Java1.7的PermGen默认空间为85 MB(或者可以通过-XX:MaxPermSize=XXXm指定)
 
-![](https://www.pdai.tech/images/java/java8-jvm-2.jpg)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jvm-2.jpg)
 
 可以从上面的JVisualVM的截图看出: 当加载超过6万个类之后，PermGen被耗尽。我们也能通过程序和GC的输出观察耗尽的过程。
 
@@ -155,7 +155,7 @@ java.lang.OutOfMemoryError: PermGen space
 
 Java的Metaspace空间: 不受限制 (默认)
 
-![](https://www.pdai.tech/images/java/java8-jvm-3.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jvm-3.png)
 
 从上面的截图可以看到，JVM Metaspace进行了动态扩展，本地内存的使用由20MB增长到646MB，以满足程序中不断增长的类数据内存占用需求。我们也能观察到JVM的垃圾回收事件—试图销毁僵死的类或类加载器对象。但是，由于我们程序的泄漏，JVM别无选择只能动态扩展Metaspace内存空间。程序加载超过10万个类，而没有出现OOM事件。
 
@@ -163,7 +163,7 @@ Java的Metaspace空间: 不受限制 (默认)
 
 Java的Metaspace空间: 128MB(-XX:MaxMetaspaceSize=128m)
 
-![](https://www.pdai.tech/images/java/java8-jvm-4.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jvm-4.png)
 
 可以从上面的JVisualVM的截图看出: 当加载超过2万个类之后，Metaspace被耗尽；与JDK1.7运行时非常相似。我们也能通过程序和GC的输出观察耗尽的过程。另一个有趣的现象是，保留的原生内存占用量是设定的最大大小两倍之多。这可能表明，如果可能的话，可微调元空间容量大小策略，来避免本地内存的浪费。
 
@@ -192,4 +192,6 @@ java.lang.OutOfMemoryError: Metaspace
 
 ## 参考文章
 
-https://wizardforcel.gitbooks.io/java8-new-features/content/9.html
+* https://wizardforcel.gitbooks.io/java8-new-features/content/9.html
+
+* 转载 https://www.pdai.tech/md/java/java8/java8-permgen.html

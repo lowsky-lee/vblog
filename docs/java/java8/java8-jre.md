@@ -1,6 +1,6 @@
 ## Java 8 - JRE精简
 
-> 理解Java8 JRE精简需理解几个问题: @pdai
+> 理解Java8 JRE精简需理解几个问题: 
 > 
 > +   为什么精简Java8 JRE，及好处是啥?
 > +   在不同平台上如何编译等?
@@ -46,11 +46,11 @@ Test.java:7: error: ManagementFactory is not available in profile 'compact2'
 2 errors
 ```
 
-![](https://www.pdai.tech/images/java/java8-jre-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jre-1.png)
 
 ## 使用工具开发的效果
 
-![](https://www.pdai.tech/images/java/java8-jre-2.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jre-2.png)
 
 ### JDEPS工具使用
 
@@ -162,10 +162,12 @@ j2re-compact1-image j2re-compact2-image j2re-compact3-image j2re-image j2sdk-ima
 
 ### 编译后compact大致的占用空间
 
-![](https://www.pdai.tech/images/java/java8-jre-3.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-jre-3.png)
 
 ## 总结
 
 如今，物联网正风行一时。我们看到大量不同的设备在市场上出现，每一种的更新速度都越来越快。java需要一个占用资源少的JRE运行环境，紧凑的JRE特性的出现，希望能带来以后的物联网的发展，甚至还是会有大量的java应用程序出现在物联网上面。目前oracle也发布了针对raspberry pi的JRE了。
 
 另外该特性也是为java9的模块化项目做准备，模块化特性是javaer所期待的特性。他是解决业务系统复杂度的一个利器，当然OSGI也是相当的出色。但osgi对于新学者来说未免太复杂了。
+
+转载 https://www.pdai.tech/md/java/java8/java8-jre.html

@@ -1,6 +1,6 @@
 ## Java 8 - JavaFx 2.0
 
-> JavaFX主要致力于富客户端开发，以弥补swing的缺陷，主要提供图形库与media库，支持audio,video,graphics,animation,3D等，同时采用现代化的css方式支持界面设计。同时又采用XUI方式以XML方式设计UI界面，达到显示与逻辑的分离。与android这方面确实有点相似性。@pdai
+> JavaFX主要致力于富客户端开发，以弥补swing的缺陷，主要提供图形库与media库，支持audio,video,graphics,animation,3D等，同时采用现代化的css方式支持界面设计。同时又采用XUI方式以XML方式设计UI界面，达到显示与逻辑的分离。与android这方面确实有点相似性。
 
 +   [Java 8 - JavaFx 2.0](#java-8---javafx-20)
     +   [JavaFX历史](#javafx%e5%8e%86%e5%8f%b2)
@@ -21,7 +21,7 @@
 
 跟java在服务器端和web端成绩相比，桌面一直是java的软肋，于是Sun公司在2008年推出JavaFX，弥补桌面软件的缺陷，请看下图JavaFX一路走过来的改进
 
-![](https://www.pdai.tech/images/java/java8-javafx-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-javafx-1.png)
 
 从上图看出，一开始推出时候，开发者需使用一种名为JavaFX Script的静态的、声明式的编程语言来开发JavaFX应用程序。因为JavaFX Script将会被编译为Java bytecode，程序员可以使用Java代码代替。
 
@@ -133,3 +133,5 @@ RecordManager，SessionManager，纪录游戏分数，会话类
 +   https://docs.oracle.com/javafx/2/ui\_controls/overview.htm#BABJACHC
     
 +   https://www.oracle.com/technetwork/cn/articles/java/layoutfx-1536156-zhs.html
+
++   转载 https://www.pdai.tech/md/java/java8/java8-javafx.html

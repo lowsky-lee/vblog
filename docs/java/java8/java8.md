@@ -1,6 +1,6 @@
 ## ♥Java8特性知识体系详解♥
 
-> Java 8 新特性详解汇总。@pdai
+> Java 8 新特性详解汇总。
 > 
 > +   Java 新特性的增加都是来源于 JSR或者JEP
 > +   JSR论坛: https://jcp.org/en/jsr/detail?id=335
@@ -24,7 +24,7 @@
 
 ## 知识体系
 
-![](https://www.pdai.tech/images/java/java8-overview.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/java8-overview.png)
 
 ## 相关文章
 
@@ -159,3 +159,5 @@
 +   Java8简明教程 https://github.com/wizardforcel/modern-java-zh
     
 +   Java8新特性探究 https://wizardforcel.gitbooks.io/java8-new-features/content/
+
++   转载 https://www.pdai.tech/md/java/java8/java8.html

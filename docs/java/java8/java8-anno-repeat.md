@@ -1,6 +1,6 @@
 ## Java 8 - 重复注解
 
-> 理解Java 8 重复注解需理解几个问题: @pdai
+> 理解Java 8 重复注解需理解几个问题: 
 > 
 > +   Jdk8之前对重复注解是怎么做的?
 > +   Jdk8对重复注解添加了什么支持?
@@ -64,3 +64,5 @@ public class RepeatAnnotationUseNewVersion {
 ## 总结
 
 JEP120没有太多内容，是一个小特性，仅仅是为了提高代码可读性。这次java 8对注解做了2个方面的改进(JEP 104,JEP120)，相信注解会比以前使用得更加频繁了。
+
+转载 https://www.pdai.tech/md/java/java8/java8-anno-repeat.html

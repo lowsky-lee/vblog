@@ -1,6 +1,6 @@
 ## Java IO - 源码: InputStream
 
-> 本文主要从**JDK 11 源码**角度分析InputStream。 @pdai
+> 本文主要从**JDK 11 源码**角度分析InputStream。 
 
 +   [Java IO - 源码: InputStream](#java-io---%E6%BA%90%E7%A0%81-inputstream)
     +   [InputStream 类实现关系](#inputstream-%E7%B1%BB%E5%AE%9E%E7%8E%B0%E5%85%B3%E7%B3%BB)
@@ -16,7 +16,7 @@
 
 > InputStream是输入字节流，具体的实现类层次结构如下：
 
-![](https://www.pdai.tech/images/io/io-inputstream-1.png)
+![](https://raw.githubusercontent.com/lowskylee/Pictures/main/images/io-inputstream-1.png)
 
 ## InputStream 抽象类
 
@@ -828,3 +828,4 @@ AtomicReferenceFieldUpdater具体可以参考：[JUC原子类: CAS, Unsafe和原
 +   JDK 11 源码
 +   https://www.cnblogs.com/winterfells/p/8745297.html
 +   https://www.cnblogs.com/AdaiCoffee/p/11369699.html
++   转载 https://www.pdai.tech/md/java/io/java-io-basic-code-inputstream.html
