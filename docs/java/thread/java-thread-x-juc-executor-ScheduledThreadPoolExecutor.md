@@ -47,7 +47,7 @@ ScheduledThreadPoolExecutor继承自 ThreadPoolExecutor，为任务提供延迟�
 
 ScheduledThreadPoolExecutor继承自 `ThreadPoolExecutor`:
 
-+   详情请参考: [JUC线程池: ThreadPoolExecutor详解](https://www.pdai.tech/md/java/thread/java-thread-x-juc-executor-ThreadPoolExecutor.html)
++   详情请参考: [JUC线程池: ThreadPoolExecutor详解](./java-thread-x-juc-executor-ThreadPoolExecutor.html)
 
 ScheduledThreadPoolExecutor 内部构造了两个内部类 `ScheduledFutureTask` 和 `DelayedWorkQueue`:
 

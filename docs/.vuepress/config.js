@@ -11,6 +11,9 @@ module.exports = {
             lang: 'zh-CN'
         }
     },
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         subSidebar: 'auto',
         searchMaxSuggestions: 15,
@@ -270,7 +273,7 @@ module.exports = {
             }
         ],
         //
-        '@vuepress-reco/vuepress-plugin-loading-page',
+        '@vuepress-reco/loading-page',
         // vuepress-plugin-fulltext-search
         'fulltext-search',
     ],

@@ -55,7 +55,7 @@
 +   非阻塞同步: CAS, AtomicXXXX
 +   无同步方案: 栈封闭，Thread Local，可重入代码
 
-具体可以参看：[线程安全的实现方法](https://www.pdai.tech/md/java/thread/java-thread-x-theorty.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95)，这里我们将对CAS重点阐释。
+具体可以参看：[线程安全的实现方法](./java-thread-x-theorty.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95)，这里我们将对CAS重点阐释。
 
 ### 什么是CAS
 
